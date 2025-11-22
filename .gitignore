@@ -17,8 +17,8 @@ bin/
 
 *.out
 *.class
-
-
+*.exe
+.idea/
 
 ### NetBeans ###
 /nbproject/private/
@@ -30,7 +30,7 @@ bin/
 ### VS Code ###
 .vscode/
 .ideavimrc
-.idea/
+
 
 ### Mac OS ###
 .DS_Store
