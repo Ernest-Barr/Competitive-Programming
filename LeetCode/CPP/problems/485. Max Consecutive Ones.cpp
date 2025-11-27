@@ -1,7 +1,4 @@
-#include <algorithm>
-#include <vector>
-
-using namespace std;
+#include "util/solution.h"
 
 int findMaxConsecutiveOnes(vector<int>& nums) {
     int res = 0;

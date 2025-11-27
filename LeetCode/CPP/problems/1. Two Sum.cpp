@@ -1,7 +1,4 @@
-#include <unordered_map>
-#include <vector>
-
-using namespace std;
+#include "util/solution.h"
 
 vector<int> twoSum(vector<int>& nums, int target) {
     unordered_map<int, int> map;

@@ -1,6 +1,4 @@
-#include <vector>
-
-using namespace std;
+#include "util/solution.h"
 
 vector<int> shuffle(vector<int>& nums, int n) {
     vector<int> res(2 * n);

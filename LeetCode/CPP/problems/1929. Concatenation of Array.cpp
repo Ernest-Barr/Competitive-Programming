@@ -1,6 +1,4 @@
-#include <vector>
-
-using namespace std;
+#include "util/solution.h"
 
 vector<int> getConcatenation(vector<int>& nums) {
     vector<int> res(nums.size() * 2);

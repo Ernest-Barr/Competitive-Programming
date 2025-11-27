@@ -1,7 +1,5 @@
-#include <string>
-#include <vector>
+#include "util/solution.h"
 
-using namespace std;
 bool isAnagram(string s, string t) {
     vector<int> freq(26);
 

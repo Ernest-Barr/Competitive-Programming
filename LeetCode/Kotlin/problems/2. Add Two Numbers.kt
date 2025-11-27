@@ -2,8 +2,8 @@ import DataStructure.ListNode
 import util.equalsList
 import util.toLinkedList
 
-
-private fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
+//TODO: Rewrite
+private fun addTwoNumbersBF(l1: ListNode?, l2: ListNode?): ListNode? {
     // Kotlin params are immutable
     var res: ListNode? = l1 //Ideally swap the name of this variable with the name of l1Copy
     var l2Copy: ListNode? = l2

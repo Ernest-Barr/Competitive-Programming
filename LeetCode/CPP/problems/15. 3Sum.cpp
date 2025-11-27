@@ -1,8 +1,4 @@
-#include <algorithm>
-#include <set>
-#include <vector>
-
-using namespace std;
+#include "util/solution.h"
 
 vector<vector<int>> threeSum(vector<int>& nums) {
     sort(nums.begin(), nums.end());
