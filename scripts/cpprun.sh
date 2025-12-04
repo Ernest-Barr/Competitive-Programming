@@ -1,34 +1,33 @@
-#!/bin/sh 
+#!/bin/sh
 
-if [ -z "$1" ]; then 
+if [ -z "$1" ]; then
     echo "Usage: $0 <filename.cpp>"
     exit 1
-fi 
-
+fi
 
 src="$1"
 
-if [ ! -f "$src" ]; then 
+shift
+
+if [ ! -f "$src" ]; then
     echo "File not found"
     exit 1
-fi 
+fi
 
 fname=$(basename "$src" .cpp)
 oname="${fname}.out"
 
-
 g++ "$src" -o "$oname"
 
+if [ $? -eq 0 ]; then
+    echo "Compiled"
+    echo "-----"
 
-if [ $? -eq 0 ]; then 
-    echo "Compiled" 
-    echo "-----" 
-
-    ./"$oname"
+    ./"$oname" "$@"
 
     rm "$oname"
 
-else 
+else
     echo "Compilation failed"
-    exit 1 
-fi 
+    exit 1
+fi
