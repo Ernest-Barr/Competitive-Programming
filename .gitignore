@@ -31,6 +31,7 @@ bin/
 ### VS Code ###
 .vscode/
 .ideavimrc
+.zed/
 
 
 ### Mac OS ###

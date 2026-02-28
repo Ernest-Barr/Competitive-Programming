@@ -1,0 +1,13 @@
+product:
+  type: lib
+  platforms: [jvm]
+
+settings:
+  jvm:
+    release: 21
+  kotlin:
+    version: 2.1.10
+
+layout: amper
+
+

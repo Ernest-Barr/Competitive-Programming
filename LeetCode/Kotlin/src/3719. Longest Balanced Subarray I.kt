@@ -8,7 +8,13 @@ private fun longestBalanced(nums: IntArray): Int {
         val set: MutableSet<Int> = mutableSetOf()
 
         for (j in i..<n) {
-            if (nums[j] !in set) if (nums[j] % 2 == 0) even++ else odd++
+            if (nums[j] !in set) {
+                if (nums[j] % 2 == 0) {
+                    even++
+                } else {
+                    odd++
+                }
+            }
             set.add(nums[j])
             if (even == odd) res = maxOf(res, j - i + 1)
         }

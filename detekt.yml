@@ -1,0 +1,11 @@
+style:
+  active: true
+  ForbiddenPublicDeclaration:
+    active: true
+    includes: ['**/*.kt']
+  UnusedPrivateMember:
+    active: false
+    UnusedPrivateProperty:
+      active: false
+MagicNumber:
+  active: false

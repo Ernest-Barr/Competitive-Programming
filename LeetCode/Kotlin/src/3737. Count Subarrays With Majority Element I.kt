@@ -1,4 +1,7 @@
-fun countMajoritySubarrays(nums: IntArray, target: Int): Int {
+fun countMajoritySubarrays(
+    nums: IntArray,
+    target: Int,
+): Int {
     var res = 0
 
     for (i in 0..<nums.size) {
@@ -10,7 +13,6 @@ fun countMajoritySubarrays(nums: IntArray, target: Int): Int {
             }
             if (c > 0) res++
         }
-
     }
 
     return res

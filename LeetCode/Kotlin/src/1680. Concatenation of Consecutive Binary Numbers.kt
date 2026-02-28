@@ -1,4 +1,4 @@
-fun concatenatedBinary(n: Int): Int {
+private fun concatenatedBinary(n: Int): Int {
     val mod = 1_000_000_007
     var res = 0L
 
@@ -12,7 +12,6 @@ fun concatenatedBinary(n: Int): Int {
         }
 
         res = ((res shl j) + i) % mod
-
     }
 
     return res.toInt()
