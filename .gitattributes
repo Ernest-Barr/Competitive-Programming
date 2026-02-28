@@ -1,2 +1,4 @@
 *.sql linguist-detectable=true
 *.sql linguist-language=SQL
+amper linguist-detectable=false
+amper.bat linguist-detectable=false
