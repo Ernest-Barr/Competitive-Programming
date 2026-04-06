@@ -1,3 +1,5 @@
+import kotlin.math.cbrt
+
 fun findGoodIntegers(n: Int): List<Int> {
     // 1k is upper bound
     // all values need to be stricly less than cbrt(n)
