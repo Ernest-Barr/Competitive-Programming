@@ -14,5 +14,11 @@ class Node(
     var right: Node? = null
     var next: Node? = null
 
+    // Random Pointer problems
+    var random: Node? = null
+
+    // Utility functions
     override fun toString(): String = `val`.toString()
 }
+
+typealias NodeCopy = Node
