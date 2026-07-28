@@ -1,6 +1,6 @@
 import kotlin.math.abs
 
-fun maxProduct(nums: IntArray): Long {
+private fun maxProduct(nums: IntArray): Long {
     for (i in nums.indices) nums[i] = abs(nums[i])
 
     nums.sort()
