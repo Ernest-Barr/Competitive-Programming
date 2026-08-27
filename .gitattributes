@@ -1,4 +1,5 @@
 *.sql linguist-detectable=true
 *.sql linguist-language=SQL
 amper linguist-detectable=false
-amper.bat linguist-detectable=false
+kotlin linguist-detectable=false
+*.bat linguist-detectable=false

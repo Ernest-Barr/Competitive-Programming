@@ -1,5 +1,5 @@
 product:
-  type: lib
+  type: jvm/app
   platforms: [jvm]
 
 settings:
