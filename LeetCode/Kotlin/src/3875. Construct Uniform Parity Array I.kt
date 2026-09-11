@@ -1,4 +1,4 @@
-fun uniformArray(nums1: IntArray): Boolean {
+private fun uniformArray(nums1: IntArray): Boolean {
     /*
 
     For any given odd integer x, we can represent it as 2k + 1 for some integer k
