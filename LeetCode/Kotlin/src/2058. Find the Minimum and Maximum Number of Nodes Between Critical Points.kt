@@ -10,10 +10,7 @@ private fun nodesBetweenCriticalPoints(head: ListNode?): IntArray {
     var c = 0
     var min = Int.MAX_VALUE
 
-    fun isValid(prev_val: Int, curr_val: Int, next_val: Int): Boolean {
-        return (curr_val > prev_val && curr_val > next_val) || (curr_val < prev_val && curr_val < next_val)
-    }
-
+    fun isValid(prev_val: Int, curr_val: Int, next_val: Int): Boolean = (curr_val > prev_val && curr_val > next_val) || (curr_val < prev_val && curr_val < next_val)
 
     while (curr != null) {
         if (curr.next != null && prev != null && isValid(prev.`val`, curr.`val`, curr.next!!.`val`)) {
@@ -29,7 +26,7 @@ private fun nodesBetweenCriticalPoints(head: ListNode?): IntArray {
         }
 
         prev = curr
-        curr = curr.next
+        curr = curr?.next
         c++
     }
 
