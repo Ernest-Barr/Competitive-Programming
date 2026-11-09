@@ -1,6 +1,6 @@
 import kotlin.math.abs
 
-fun minMoves(nums: IntArray): Int {
+private fun minMoves(nums: IntArray): Int {
     val max = nums.max()
     var res = 0
 

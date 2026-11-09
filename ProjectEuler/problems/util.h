@@ -1,5 +1,4 @@
-#ifndef COMPETITIVE_PROGRAMMING_UTIL_H
-#define COMPETITIVE_PROGRAMMING_UTIL_H
+#pragma once
 
 #include <bits/stdc++.h>
 
@@ -53,7 +52,17 @@ struct Sieve {
 };
 
 
+struct BigInt {
 
+};
 
-
-#endif  // COMPETITIVE_PROGRAMMING_UTIL_H
+template <typename T>
+std::ostream& operator<<(std::ostream& os, const vec<T>& v) {
+    os << "[";
+    for (int i = 0; i < v.size(); ++i) {
+        os << v[i];
+        if (i != v.size() - 1) os << ", ";
+    }
+    os << "]";
+    return os;
+}
