@@ -1,18 +1,21 @@
+// https://open.kattis.com/problems/oddecho
+
 #include <bits/stdc++.h>
+using namespace std;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
     int n;
-    std::cin >> n;
+    cin >> n;
 
     for (int i = 1; i <= n; ++i) {
-        std::string s;
-        std::cin >> s;
+        string s;
+        cin >> s;
 
         if (i & 1) {
-            std::cout << s << "\n";
+            cout << s << "\n";
         }
     }
 }
