@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-using u64 = long long;
+using i64 = long long;
 
 int main() {
     ios::sync_with_stdio(false);
@@ -10,15 +10,15 @@ int main() {
     int n;
     cin >> n;
 
-    u64 prev, res = 0;
+    i64 prev, res = 0;
     cin >> prev;
 
     while (--n) {
-        u64 num;
+        i64 num;
         cin >> num;
 
         if (prev > num) {
-            u64 delta = prev - num;
+            i64 delta = prev - num;
             res += delta;
             prev = num + delta;
         } else {

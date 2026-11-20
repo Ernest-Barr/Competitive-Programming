@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-using u64 = long long;
+using i64 = long long;
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    u64 n;
+    i64 n;
     cin >> n;
     cout << n;
 

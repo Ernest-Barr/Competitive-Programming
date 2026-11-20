@@ -1,16 +1,18 @@
-#include <bits/stdc++.h> 
+// 2025 ICPC Problem
+// https://open.kattis.com/problems/snakeystring
 
-using namespace std; 
+#include <bits/stdc++.h>
 
-int main() { 
+using namespace std;
+
+int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
-    int r,c; 
-    cin >> r >> c; 
 
+    int r, c;
+    cin >> r >> c;
 
-    vector<string> grid; 
+    vector<string> grid;
     grid.reserve(r);
 
     for (int i = 0; i < r; ++i) {
@@ -19,7 +21,7 @@ int main() {
         grid.emplace_back(s);
     }
 
-    string res; 
+    string res;
 
     for (int i = 0; i < c; ++i) {
         for (int j = 0; j < r; ++j) {
