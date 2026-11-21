@@ -11,12 +11,13 @@ int main() {
 
     int n = str.length();
     vector<bool> used(n, false);
+    vector<string> res;
 
     sort(str.begin(), str.end());
 
-    const auto permute = [&](this auto&& self, string& curr) {
+    const auto permute = [&](auto&& self, string& curr) {
         if (curr.length() == n) {
-            cout << curr << "\n";
+            res.push_back(curr);
             return;
         }
 
@@ -26,7 +27,7 @@ int main() {
 
             curr.push_back(str[i]);
             used[i] = true;
-            self(curr);
+            self(self, curr);
             curr.pop_back();
             used[i] = false;
         }
@@ -34,5 +35,8 @@ int main() {
 
     string curr;
     curr.reserve(n);
-    permute(curr);
+    permute(permute, curr);
+
+    cout << res.size() << "\n";
+    for (const auto& perm : res) cout << perm << "\n";
 }
